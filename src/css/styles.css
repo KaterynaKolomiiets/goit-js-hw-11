@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+button {
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color:grey;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+     border: solid grey 1px;
+}
+input[name='searchQuery']{
+    padding: 10px 20px;
+    border: solid grey 1px;
+}
+input[name='searchQuery']::placeholder{
+    text-transform: uppercase;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.photo-card {
+    margin: 10px;
+    box-shadow: -2px 1px 12px 3px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+ 
+}
+.info {
+    display: flex;
+}
+.photo-card {
+    width: 280px;
+}
+.photo-card p{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+b, span {
+    text-align: center;
+}
+
+.load-more {
+    margin: auto;
+}
+
+.image {
+    height: 200px;
+    width: 280px;
+    background-size: cover;
+}
